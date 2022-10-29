@@ -6,35 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PCO Website</title>
     <link rel="icon" href="" type="image/x-icon" />
-    <link rel="stylesheet" href="VragonA00/PCO_website/PCOstyle.css">
+    <link rel="stylesheet" href="/PCOasset/PCOstyle.css">
     <link rel="stylesheet" href="/PCOasset/icon/themify-icons/themify-icons.css">
+    <style>
+        @media screen and (max-width: 1200px )  {
+       #navbar .one, 
+       #navbar .two, 
+       #navbar .three, 
+       #navbar .four, 
+       #navbar .five, 
+       #navbar .six {
+        display: none;
+    }
+    @media screen and (max-width:1200px)  {
+        #header #navbar-button{display:block;}
+    }
+  }
+    </style>
 </head>
 <body>
 <div class="main">
     <div id="header">
         <ul id="navbar">
             <li><a href="#"><i class="ti-home"> </i>Home</a></li>
-            <li><a href="#One"><i class="ti-bookmark-alt"> </i>Unit Overview</a></li>
-            <li><a href="#Two"><i class="ti-agenda"> </i>Learning Resource</a></li>
-            <li><a href="#Three"><i class="ti-check-box"> </i>Assessment</a></li>
-            <li><a href="#Four"><i class="ti-calendar"> </i>Weekly Schedule</a></li>
-            <li><a href="#Five"><i class="ti-comments"> </i>Announcements</a></li>
-            <li><a href=""><i class = "down-arrow ti-angle-down"> </i></a>
+            <li class="one"><a href="#One"><i class="ti-bookmark-alt"> </i>Unit Overview</a></li>
+            <li class="two"><a href="#Two"><i class="ti-agenda"> </i>Learning Resource</a></li>
+            <li class="three"><a href="#Three"><i class="ti-check-box"> </i>Assessment</a></li>
+            <li class="four"><a href="#Four"><i class="ti-calendar"> </i>Weekly Schedule</a></li>
+            <li class="five"><a href="#Five"><i class="ti-comments"> </i>Announcements</a></li>
+            <li class="six"><a href=""><i class = "down-arrow ti-angle-down"> </i></a>
                 <div id="subnav">
                     <ul>
                         <li><a href="#Six"><i class="ti-user"> </i>Student list</a></li>
                         <li><a href="#Seven"><i class="ti-email"> </i>Contact detail</a></li>
+                        
                     </ul>
                 </div>
             </li>
         </ul>
+        <div id="navbar-button">
+            <i class ="navbar-icon ti-menu"></i>
+            <div id="nav-list">
+                <ul>
+                    <li class="one"><a href="#One"><i class="ti-bookmark-alt"> </i>Unit Overview</a></li>
+                    <li class="two"><a href="#Two"><i class="ti-agenda"> </i>Learning Resource</a></li>
+                    <li class="three"><a href="#Three"><i class="ti-check-box"> </i>Assessment</a></li>
+                    <li class="four"><a href="#Four"><i class="ti-calendar"> </i>Weekly Schedule</a></li>
+                    <li class="five"><a href="#Five"><i class="ti-comments"> </i>Announcements</a></li>
+                    <li class="six"><a href="#Six"><i class="ti-user"> </i>Student list</a></li>
+                    <li class="seven"><a href="#Seven"><i class="ti-email"> </i>Contact detail</a></li>
+                    
+                </ul>
+            </div>
+        </div>
     </div>
 <div id="slider">
     <div class = "text-heading text-content">The Principle of Computing</div>
     <div class = "text-description text-content">HANU Fall 2022 | Nguyen Ngoc Anh</div>
 </div>
 <div id="content">
-    <div id="One" class="content-section first-content">
+    <div id="One" class="content-section white-content">
         <h2 class="section-heading">Unit Overview</h2>
         <p class="section-sub-heading"><i>Unit Detail</i></p>
         <div class="detail-table table-text">
@@ -74,29 +105,29 @@
             <li class="LeOb"><span class="orderlist">7</span>Applying the Basics of Web Page Design</li>
         </ul></div>
     </div>
-    <div id="Two" class="second-content">
+    <div id="Two" class="black-content">
         <div class="content-section ">
            <h2 class="section-heading">Learning Resources</h2>
            
            <div class="textbook">
             <p class="section-sub-heading" style = "color:white"><i>Textbooks</i></p>
             <div>
-                <ul class="place-list">
-                 <li class = "place-item">
-                   <img class="place-img" src="/PCOasset/img/imageServlet.jfif"></img>
-                   <div class="place-body">
-                       <h3 class = "place-heading">Discovering Computer 2018</h3>
-                       <p class="place-date">Digital Technology, Data and Devices</p>
-                       <p class="place-description">Misty E. Vermaat, Susan L. Sebok, Steven M. Freund, Jennifer T. Campbell, Mark Frydenberg, Cengage learning</p>
+                <ul class="tb-list">
+                 <li class = "tb-item">
+                   <img class="tb-img" src="https://user-images.githubusercontent.com/102859609/198833653-dab85b14-2097-4214-a160-166ccfdebe3f.png"></img>
+                   <div class="tb-body">
+                       <h3 class = "tb-heading">Discovering Computer 2018</h3>
+                       <p class="tb-date">Digital Technology, Data and Devices</p>
+                       <p class="tb-description">Misty E. Vermaat, Susan L. Sebok, Steven M. Freund, Jennifer T. Campbell, Mark Frydenberg, Cengage learning</p>
                        
                    </div>
                  </li>
-                 <li class = "place-item">
-                   <img class="place-img" src="/PCOasset/img/7128Ts1XUdL.jpg"></img>
-                   <div class="place-body">
-                       <h3 class = "place-heading">Computer organization and architecture 2016</h3>
-                       <p class="place-date">Designing for Performance</p>
-                       <p class="place-description">William Stallings, 10th edition, Pearson</p>
+                 <li class = "tb-item">
+                   <img class="tb-img" src="https://user-images.githubusercontent.com/102859609/198833477-246d3565-2ec2-4f71-947d-1966b17df182.jpg"></img>
+                   <div class="tb-body">
+                       <h3 class = "tb-heading">Computer organization and architecture 2016</h3>
+                       <p class="tb-date">Designing for Performance</p>
+                       <p class="tb-description">William Stallings, 10th edition, Pearson</p>
                        
                    </div>
                  </li>
@@ -137,31 +168,251 @@
            <div class="clear"></div>
         </div>
     </div>
-    <div id="Three" class="content-section first-content">
+    <div id="Three" class="content-section white-content" >
         <h2 class="section-heading">Assessment</h2>
-        <!-- <p class="section-sub-heading"><i>1. Unit Detail</i></p>
-        <p class="section-sub-heading"><i>2. Nature of the Unit</i></p>
-        <p class="section-sub-heading"><i>3. Learning Objective</i></p> -->
+        <table>
+            <tr> 
+             <th>Assessment Name</th>
+              <th>Weight</th>
+              <th>Brief Description</th>
+             </tr>             
+             <tr>
+              <td>Attendance</td>
+              <td>10%</td>
+              <td>Students must participate in at least 80% of classes. Otherwise, you are not allowed to take the
+                final exam.
+                </td>
+             </tr>
+             <tr>
+              <td>Midterm</td>
+              <td>30%</td>
+              <td>Project/Computer-based Exam</td>
+             </tr>
+             <tr>
+                <td>Final Exam</td>
+                <td>60%</td>
+                <td>Closed book, 90 minutes Test, covers all lecture topics</td>
+               </tr>            
+            </table>
     </div>
-    <div id="Four" class="content-section first-content">
-        <h2 class="section-heading">Proposed Weekly Lectures & Tutorials Schedule</h2>
-        <!-- <p class="section-sub-heading"><i>1. Unit Detail</i></p>
-        <p class="section-sub-heading"><i>2. Nature of the Unit</i></p>
-        <p class="section-sub-heading"><i>3. Learning Objective</i></p> -->
+    <div id="Four" class="content-section white-content">
+        <h2 class="section-heading">Proposed Weekly Lectures<br> & <br>Tutorials Schedule</h2>
+        <table>
+            <tr>
+              <th>Week</th>
+              <th>Description</th>
+              <th>Tutorial</th>
+              <th>Note</th>
+             </tr>            
+             <tr>
+              <td>1</td>
+              <td>Orientation – Overview of computer</td>
+              <td>
+                <p>Email Etiquettes</p>
+                <p>Typing</p> 
+                Microsoft Word                
+              </td>
+              <td></td>
+             </tr>
+             <tr>
+                <td>2</td>
+                <td>Computer components</td>
+                <td>
+                    Microsoft Excel                
+                </td>
+                <td></td>
+               </tr><tr>
+                <td>3</td>
+                <td>Logic gate combination</td>
+                <td>
+                    Microsoft Excel             
+                </td>
+                <td></td>
+               </tr><tr>
+                <td>4</td>
+                <td>Programs and Apps</td>
+                <td>
+                    Microsoft Excel             
+                </td>
+                <td></td>
+               </tr><tr>
+                <td>5</td>
+                <td>Input and Output</td>
+                <td>
+                    Microsoft Excel              
+                </td>
+                <td></td>
+               </tr><tr>
+                <td>6</td>
+                <td>Digital storage</td>
+                <td>
+                  HTML                
+                </td>
+                <td></td>
+               </tr><tr>
+                <td>7</td>
+                <td>Number systems (Bin, Oct, Dec, Hex) + Number representation</td>
+                <td>
+                  CSS                
+                </td>
+                <td></td>
+               </tr><tr>
+                <td>8</td>
+                <td>Character representation</td>
+                <td>
+                    HTML + CSS               
+                </td>
+                <td></td>
+               </tr><tr>
+                <td>9</td>
+                <td><b>Midterm Project</b></td>
+                <td>
+                    <b>Midterm Project</b>              
+                </td>
+                <td>
+                    <b>Midterm Project</b>              
+                </td>
+               </tr><tr>
+                <td>10</td>
+                <td>Operating systems</td>
+                <td>
+                    Number System                
+                </td>
+                <td></td>
+               </tr><tr>
+                <td>11</td>
+                <td>Network and communication</td>
+                <td>
+                    Data representation            
+                </td>
+                <td></td>
+               </tr><tr>
+                <td>12</td>
+                <td>Data/Database Management Systems</td>
+                <td>
+                    Data representation                
+                </td>
+                <td></td>
+               </tr><tr>
+                <td>13</td>
+                <td>Software life cycle or Security basics</td>
+                <td>
+                    Database/Photoshop             
+                </td>
+                <td></td>
+               </tr><tr>
+                <td>14</td>
+                <td>Review</td>
+                <td>
+                    Review                
+                </td>
+                <td></td>
+               </tr>
+               <tr>
+                <td>15</td>
+                <td><b>Final Exam</b></td>
+                <td> </td>
+                <td>
+                    <b>Final Exam</b>
+                </td>
+               </tr>
+                    
+            </table>
     </div>
-    <div id="Five" class="content-section first-content">
-        <h2 class="section-heading">Announcements</h2>
-        <!-- <p class="section-sub-heading"><i>1. Unit Detail</i></p>
-        <p class="section-sub-heading"><i>2. Nature of the Unit</i></p>
-        <p class="section-sub-heading"><i>3. Learning Objective</i></p> -->
+    <div id="Five" class="black-content">
+        <div class="content-section">
+            <h2 class="section-heading">Announcements</h2>
+        </div>
+        <p class="section-sub-heading" style="color:white"> General Announcements</p>
+        <div class="news">
+            <div class="col col-half">
+                <img src="https://user-images.githubusercontent.com/102859609/198833495-71f78cba-deb8-438b-8d20-0d98aabe962f.jpg" alt="">
+            </div>
+            <div class="col col-half">
+                <ul>
+                    <li>Title: Tôi không bị trượt Triết</li>
+                    <li>By: <a href="#">Teacher's name</a></li>
+                    <li>Date: 31-02-2022</li>
+                    <li>Content: ...</li>
+                </ul>
+            </div>
+        </div>
+        <p class="section-sub-heading" style="color:white">Class Announcements</p>
+        <div>
+            <ul class="class-list">
+             <li class = "class-item">
+               <img class="class-img" src="https://user-images.githubusercontent.com/102859609/198833490-83e71704-37be-4c0a-bd7c-3c4c205e1db5.jpg"></img>
+               <div class="class-body">
+                   <h3 class = "class-heading">Class 1</h3>
+                   <p class="class-date">01-11-2022</p>
+                   <p class="class-description">Content:...</p>
+                <li class = "class-item">
+               <img class="class-img" src="https://user-images.githubusercontent.com/102859609/198833490-83e71704-37be-4c0a-bd7c-3c4c205e1db5.jpg"></img>
+               <div class="class-body">
+                   <h3 class = "class-heading">Class 2</h3>
+                   <p class="class-date">01-11-2022</p>
+                   <p class="class-description">Content:...</p>
+                <li class = "class-item">
+               <img class="class-img" src="https://user-images.githubusercontent.com/102859609/198833490-83e71704-37be-4c0a-bd7c-3c4c205e1db5.jpg"></img>
+               <div class="class-body">
+                   <h3 class = "class-heading">Class 3</h3>
+                   <p class="class-date">01-11-2022</p>
+                   <p class="class-description">Content:...</p>
+                
+               </div>
+             </li>
+            </ul>
+          </div>
     </div>
-    <div id="Six" class="content-section first-content">
+    <div id="Six" class="content-section white-content">
         <h2 class="section-heading">Student List</h2>
-        <!-- <p class="section-sub-heading"><i>1. Unit Detail</i></p>
-        <p class="section-sub-heading"><i>2. Nature of the Unit</i></p>
-        <p class="section-sub-heading"><i>3. Learning Objective</i></p> -->
+        <ul>
+            <li><a href="">Class 01</a></li>
+            <li><a href="">Class 02</a></li>
+            <li><a href="">Class 03</a></li>
+
+        </ul>
+        <table>
+            <tr> 
+                <th>Number</th>
+                <th>Name</th>
+                <th>Student ID</th>
+                <th>Note</th>
+            </tr> 
+            <tr> 
+                <td>1</td>
+                <td>A</td>
+                <td></td>
+                <td></td>
+            </tr> 
+            <tr> 
+                <td>2</td>
+                <td>B</td>
+                <td></td>
+                <td></td>
+            </tr> 
+            <tr> 
+                <td>3</td>
+                <td>C</td>
+                <td></td>
+                <td></td>
+            </tr> 
+            <tr> 
+                <td>4</td>
+                <td>D</td>
+                <td></td>
+                <td></td>
+            </tr> 
+            <tr> 
+                <td>5</td>
+                <td>E</td>
+                <td></td>
+                <td></td>
+            </tr> 
+    
+        </table>
     </div>
-    <div id="Seven" class="content-section">
+    <div id="Seven" class="content-section ">
         <h2 class="section-heading">CONTACT DETAIL</h2>
         
         
@@ -193,26 +444,6 @@
             </div>
             
         </div>
-        <!-- <div class="contact-option-list">
-            <ul class="contact-list" style="list-style-type: none;">
-                <li>
-                    <a href="">
-                    <img class="contact-img" src="/asset.css/img/640px-Facebook-icon-1.png" alt="">
-                    <p class="contact-text">Facebook</p></a>
-                </li>
-                <li>
-                    <a href="">
-                    <img class="contact-img" src="/asset.css/img/mjgnhfbgvfcdzfgh.PNG" alt="">
-                    <p class="contact-text">Twitter</p></a>
-                </li>
-                <li>
-                    <a href="">
-                        <img class="contact-img" src="/asset.css/img/LinkedIn_icon.svg.png" alt="">
-                        <p class="contact-text">LinkedIn</p>
-                    </a>
-                </li>
-            </ul> 
-        </div> -->
     </div>
     <div class="map-section">
         <img src="/asset.css/img/dgdfgdfg.PNG" alt="" class="img-map">
